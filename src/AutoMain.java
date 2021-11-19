@@ -42,26 +42,26 @@ class Auto{
 	public void kiihdyta() {
 		
 		if (bensanmaara > 0) {
-			System.out.println("Auto kiihdyttää");
+			System.out.println("Auto kiihdyttaa");
 			bensanmaara = bensanmaara - 1;
 		}
 		else {
-			System.out.println("Ei voi kiihdyttää, tankki tyhjä.");
+			System.out.println("Ei voi kiihdyttaa, tankki tyhja.");
 		}
 	}
 	
 	public void NaytaTiedot() {
 		System.out.println("Auton merkki: " + merkki);
 		System.out.println("Auton malli: " + malli);
-		System.out.println("Polttoaineen määrä (0-100 %): " + bensanmaara);
+		System.out.println("Polttoaineen maara (0-100 %): " + bensanmaara);
 	}
 	
 	public void tankkaa() {
 		System.out.println("Tankissa bensaa: " + bensanmaara);
-		System.out.println("Montako yksikköä laitetaan?");
+		System.out.println("Montako yksikkoa laitetaan?");
 		tankkaus = in.nextLine();
 		bensanmaara = bensanmaara + Integer.parseInt(tankkaus);
 		
-		System.out.println("Tankissa bensaa tankkauksen jälkeen: " + bensanmaara);
+		System.out.println("Tankissa bensaa tankkauksen jalkeen: " + bensanmaara);
 	}
 }
