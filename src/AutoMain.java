@@ -17,6 +17,9 @@ public class AutoMain {
 		
 		Auto auto2 = new Auto("Audi", "A6", 40);
 		auto2.NaytaTiedot();
+		auto2.kiihdyta();
+		auto2.kiihdyta();
+		auto2.tankkaa();
 	}
 
 }
